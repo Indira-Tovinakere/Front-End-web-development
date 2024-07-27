@@ -1,0 +1,129 @@
+<html>
+<head>
+<style>
+li{
+    float:right;
+	display:inline-block;
+	margin: 20px 20px;
+	}
+.tit{ float:right;
+      color:white;
+	  margin:10px;
+	  }
+	ul li a{
+ color:rgb(218, 213, 213);
+ }
+ 
+ a{text-decoration:none;
+   color:white;
+   }
+   </style>
+   
+  <body style="background-image:url('background.webp');background-repeat:no-repeat;background-size:100% ;background-attachment:fixed;"> 
+   <div class="tit">
+<ul style="font-size:20px">
+  <li><a href="Contact us.html"><b>Contact Us</b></a></li>
+<li><a href="order now.html"><b>Order now</b></a></li>
+<li><a href="know more.html"><b>Know more</b></a></li>
+<!--li><a href="coffee.html"><b>Coffee</b></a></li>-->
+<li><a href="bakery.html"><b>Home</b></a></li>
+</ul>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2 style="font-family:Verdana, Geneva, Tahoma, sans-serif;font-size:30px;color:black;" align="center">Order now!!</h2>
+<img src="31 Vintage Church Desserts Worth Praising.jpg" width="200" height="200" />
+<img src="lava.jpg" width="200" height="200"/>
+<img src="cakes.jpg" width="200" height="200"/>
+<img src="cupcake.jpg"width="200" height="200"/>
+<img src="sandwich.jpg"width="200" height="200"/>
+<img src="tiramisu.jpg"width="200" height="200"/>
+<img src="truffle.jpg"width="200" height="200"/>
+</div>
+<br>
+<br>
+<br>
+ <form name="myform" onsubmit="return(validate());">
+  <center>
+<h3 style="font-family:Verdana, Geneva, Tahoma, sans-serif;font-size:20px;"> Your Name:</h3>
+<input type="text"width="100%" name="Name"><br>
+<pre><h3 style="font-family:Verdana, Geneva, Tahoma, sans-serif;font-size:20px">Email:</h3>
+<input type="text" name="Email"><br>
+<h3 style="font-family:Verdana, Geneva, Tahoma, sans-serif;font-size:20px">Select:</h3>
+<select name="select"><br>
+<option value="-1" selected>Select the product</option>
+<option value="1">Signature Ragi Chocolate cake </option>
+<option value="2">Vegan chocolate mouse</option>
+<option value="3">Gluten-Free Dream cake</option>
+<option value="4">Vegan cheesecake (available in all flavours)</option>
+<option value="5">GF bread</option>
+<option value="6">Pizza</option>
+<option value="7">Garlic bread</option>
+<option value="8">Chocolate chip cookies</option>
+<option value="9">Classic banana bread</option>
+<option value="10">Pudding</option>
+<option value="11">Doughnuts</option>
+<option value="12">Flourless brownie</option>
+<option value="13">Choco lava cake</option>
+<option value="14">Cup cakes</option>
+<option value="15">Tiramisu</option>
+<option value="16">Truffle</option>
+<option value="17">Pie</option>
+<option value="18">Plum cake</option>
+<option value="19">Red velvet cake/option>
+<option value="20">Focaccia</option>
+<option value="21">Signature homemade chocolate</option>
+</select>
+<h3 style="font-family:Verdana, Geneva, Tahoma, sans-serif;font-size:20px">Quantity:</h3>
+<select name="select"><br>
+<option value="-1" selected>Select the quantity</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select>
+<h3 style="font-family:Verdana, Geneva, Tahoma, sans-serif;font-size:20px">Flavor</h3>
+<textarea name="message" rows="2" cols="20"></textarea>
+<br><br>
+</center>
+<center>
+<button tyoe="submit" style="font-size:20px;font-family:Verdana, Geneva, Tahoma, sans-serif;background-color:rgb(214, 220, 214);color:white;width:100px;height:50px;opacity:0.7">Send us now</button>
+</center>
+<head>
+<title>Form Validation</title>
+<script type="text/javascript">
+
+
+
+
+function validate() {
+  if(document.myform.Name.value=="") {
+   alert("Please provode your name");
+   document.myform.Name.focus();
+   return false;
+   }
+   if(document.myform.Email.value=="") {
+   alert("Please provide ur email-id");
+   document.myform.Email.value.focus();
+   return false;
+   }
+    
+	
+	if(document.myform.select.value=="-1") {
+	alert("Please provide your country");
+	document.myform.select.value.focus();
+	return false;
+	}
+	return(true);
+	}
+	
+
+	</script>
+	</head>
+	
